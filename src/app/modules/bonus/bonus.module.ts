@@ -1,7 +1,6 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ProfileModule } from '../profile/profile.module';
 import { BonusViewComponent } from './pages/view/bonus-view.page';
 
 
@@ -16,7 +15,6 @@ import { BonusViewComponent } from './pages/view/bonus-view.page';
                 component: BonusViewComponent,
             }
         ]),
-        ProfileModule,
     ],
     exports: [
         BonusViewComponent

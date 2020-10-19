@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ export class HomePage {
 
   constructor(
     public afDB: AngularFireDatabase,
+    private menu: MenuController,    
   ) {
     
     const date = new Date();
@@ -53,6 +55,15 @@ export class HomePage {
   deleteTask(task: any) {
     this.afDB.list('Tasks/').remove(task.key);
   }
+  openEnd() {
+    this.menu.open('end');
+  }
+
+  openFirst() {
+    this.menu.enable(true, 'custom');
+    this.menu.open('custom');
+  }
+
 }
 
 

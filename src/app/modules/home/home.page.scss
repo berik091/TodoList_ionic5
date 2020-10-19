@@ -2,7 +2,7 @@
   padding: 1px;
   height: 100%;
   width: 100%;
-  background-image: url('../../assets/bg.jpg');
+  background-image: url('../../../assets/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -26,4 +26,7 @@ h5 {
   width: 96%;
   --color: #ffffff;
   margin-left: 2%;
+}
+.my-custom-menu {
+  --width: 500px;
 }

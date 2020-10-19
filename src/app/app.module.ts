@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { BookService } from './services/book.service';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDeLSgjj3s9z0kuR4tduBpJv1nLM-TkrFE",
@@ -31,6 +32,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
   ],
   providers: [
+    BookService,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
