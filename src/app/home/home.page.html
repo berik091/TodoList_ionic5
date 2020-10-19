@@ -1,3 +1,6 @@
+
+
+<!-- Header -->
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title>
@@ -6,6 +9,7 @@
   </ion-toolbar>
 </ion-header>
 
+<!-- Content -->
 <ion-content>
   <div class="bg-img">
     <h1><b>Сегодня</b></h1>
@@ -40,12 +44,12 @@
 
     <ion-button *ngIf="!addTask" (click)="showForm()" expand="block" class="add-button">
       <ion-icon name="add" slot="start"></ion-icon>
-      Открыть задачу
+      Добавить задачу
     </ion-button>
     
     <ion-button *ngIf="addTask" (click)="showForm()" expand="block" class="add-button">
       <ion-icon name="close" slot="start"></ion-icon>
-      Закрыть задачу
+      Скрыть задачу
     </ion-button>
   </div>
 </ion-content>
